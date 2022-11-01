@@ -5,7 +5,7 @@ import { Type } from "./typescript";
 
 
 const Profile = () => {
-  const profileImg="https://avatars.githubusercontent.com/u/103144321?s=400&u=7beb3721f11395d27bad6e29025ff1de74872d91&v=4"
+  const profileImg="https://avatars.githubusercontent.com/u/103144321?s=400&u=76bb787d4c9d67956cfd0a0fa4341cf4f08b7d43&v=4"
   return (
     <div className="box">
       <div className="d-flex profile container  rounded flex-wrap">
