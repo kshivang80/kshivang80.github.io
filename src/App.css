@@ -1,6 +1,12 @@
+*{
+  font-family: 'Nunito', sans-serif;
+}
 .App {
   text-align: center;
+  
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -37,4 +43,9 @@
   }
 }
 
-
+body{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+  background-color:#f8f9fa;
+}
