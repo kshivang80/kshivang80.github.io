@@ -83,7 +83,7 @@ const Projects = () => {
                                 <button><GitHubIcon />Github</button>
 
                                 </Link>
-                                <Link href={ele.githubLink} target="_blank" >
+                                <Link href={ele.deployedLink} target="_blank" >
                                 <button><StreamIcon />Live</button>
                                     
                                 </Link>
