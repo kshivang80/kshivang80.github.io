@@ -3,63 +3,23 @@ import emailjs from '@emailjs/browser';
 import styled from 'styled-components'
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const ContactUs = () => {
-    const [submit, setSubmit] = useState(false)
-    const [data, setData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
+  
 
     useEffect(() => {
-        Aos.init({duration:2000})
-       })
+        Aos.init({ duration: 2000 })
+    })
 
 
-    const handleSubmission = (e) => {
-        e.preventDefault();
-        if (data.name && data.email && data.subject && data.message) {
-            emailjs.send('service_fzjzkw2', 'template_86w75om', data, '7GZ_K1-rPbW8KkUMM')
-                .then((response) => {
-                    setSubmit(true)
-                }).catch((error) => {
-                    setSubmit(false)
-                    setData({...data,
-                        name: '',
-                        email: '',
-                        subject: '',
-                        message: ''
-                    })
-                });
-        }
-    };
 
-    useEffect(() => {
-        let id = setInterval(() => {
-            setSubmit(false);
-            
-        }, 5000)
 
-        if(!submit){
-            setData({...data,
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
-            })
-        };
-
-        return() =>{
-            clearInterval(id)
-        }
-        
-    }, [submit]);
 
     return (
         <Container id='contact'>
@@ -77,11 +37,25 @@ const ContactUs = () => {
                                 <p>+91-9599571099</p>
                             </a>
                         </div>
-                        <div  data-aos='fade-up'>
-                            <EmailIcon fontSize="large"/>
+                        <div data-aos='fade-up'>
+                            <EmailIcon fontSize="large" />
                             <h1>Email</h1>
                             <p>You can Simply mail me just by clicking on my email</p>
                             <a href='mailto:anunwn@gmail.com' rel="noreferrer" target="_blank"><p>kshivang80@gmail.com</p></a>
+                        </div>
+                        <div data-aos='fade-up'>
+
+                            <GitHubIcon fontSize="large" />
+
+                            <h1>GitHub</h1>
+                            <p>This is my GitHub Account</p>
+                            <a href='https://github.com/kshivang80' rel="noreferrer" target="_blank"><p>kshivang80</p></a>
+                        </div>
+                        <div data-aos='fade-up'>
+                            <LinkedInIcon fontSize="large" />
+                            <h1>LinkedIn</h1>
+                            <p>Connect With me </p>
+                            <a href='https://www.linkedin.com/in/shivang-kumar-272488233/' rel="noreferrer" target="_blank"><p>Just One Click</p></a>
                         </div>
                         <div data-aos='fade-left'>
                             <LocationOnIcon fontSize="large" />
@@ -93,23 +67,39 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-                {submit && <>
-                    <div className='emailSent'>
-                        <h1 style={{ color: '#01a479' }}>Email Sent Successfully.</h1>
-                        <p>Thank you <span style={{ fontWeight: 'bold' }}>{data.name}</span>, your message has been submitted to us.</p>
-                    </div>
-                </>}
+        
                 <div className='contactForm'>
-                    <form action="" onSubmit={handleSubmission}>
+                    <form 
+                      action="https://getform.io/f/a345721a-f9b5-47cf-8926-32d2cf602048"
+                      method="POST"
+                    
+                    >
                         <div>
-                            <input value={submit?'':data.name} type="text" name='name'  placeholder='Name' onChange={(e) => setData({ ...data, name: e.target.value })} />
-                            <input value={submit?'':data.email} type="email" name='email' placeholder='Email' onChange={(e) => setData({ ...data, email: e.target.value })} />
-                            <input value={submit?'':data.subject} type="text" name='subject' placeholder='Subject' onChange={(e) => setData({ ...data, subject: e.target.value })} />
+                            <input   
+                                type="text"
+                                name="name"
+                                placeholder="Enter Your Name Please"
+                            
+                            />
+                            <input  
+                             type="text"
+                             name="email"
+                             placeholder="Enter Your E-mail Please"
+                            
+                            
+                            />
+                            <input  
+                             type="text"
+                             name="subject"
+                             placeholder="Enter Your  Subject"
+                            
+                            
+                            />
                         </div>
                         <div>
-                            <textarea value={submit?'':data.message} type="text" name='message' placeholder='Your Message' onChange={(e) => setData({ ...data, message: e.target.value })} />
+                            <textarea    name="massage"    placeholder="Enter Your Massage" />
                             <div>
-                                <button type='submit'  data-aos='flip-left'>Send Message</button>
+                                <button  data-aos='flip-left'>Send Message</button>
                             </div>
                         </div>
                     </form>
