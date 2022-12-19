@@ -105,7 +105,7 @@ const Navbar = () => {
                         Resume<DownloadIcon />
                     </a></div></li> */}
           <li   style={{cursor:"pointer"}}>
-            <a href="https://drive.google.com/file/d/1-wfUN-ge2rG3uKSKUveUQ68GqxxxZAVm/view?usp=share_link">
+            <a href="https://drive.google.com/file/d/1-wfUN-ge2rG3uKSKUveUQ68GqxxxZAVm/view?usp=share_link"  target="_blank">
               Resume
             </a>
           </li>

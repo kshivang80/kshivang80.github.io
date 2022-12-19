@@ -30,7 +30,7 @@ const About = () => {
 
             />
                         <p>A dedicated Full stack web developer who is always passionate about learning new things. A good leader and a good team player.</p>
-                        <a href="https://drive.google.com/file/d/1-wfUN-ge2rG3uKSKUveUQ68GqxxxZAVm/view?usp=share_link">
+                        <a href="https://drive.google.com/file/d/1-wfUN-ge2rG3uKSKUveUQ68GqxxxZAVm/view?usp=share_link" target="_blank">
                             <button data-aos='fade-left'>Download CV<DownloadIcon /></button>
                         </a>
 

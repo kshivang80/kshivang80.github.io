@@ -7,6 +7,7 @@ import wrdrbPng from '../Resources/Images/Project/wrdrbPng.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StreamIcon from '@mui/icons-material/Stream';
 import { useState } from 'react';
+import { Link } from "@chakra-ui/react";
 
 
 const Projects = () => {
@@ -78,8 +79,16 @@ const Projects = () => {
                                 ))}
                             </div>
                             <div className='linkSection'>
-                                <a href={ele.githubLink}><button><GitHubIcon />Github</button></a>
-                                <a href={ele.deployedLink}><button><StreamIcon />Live</button></a>
+                                <Link href={ele.githubLink} target="_blank">
+                                <button><GitHubIcon />Github</button>
+
+                                </Link>
+                                <Link href={ele.githubLink} target="_blank" >
+                                <button><StreamIcon />Live</button>
+                                    
+                                </Link>
+                                {/* <a href={ele.githubLink}><button><GitHubIcon />Github</button></a> */}
+                                {/* <a href={ele.deployedLink}><button><StreamIcon />Live</button></a> */}
                             </div>
                         </div>
                     </div>
