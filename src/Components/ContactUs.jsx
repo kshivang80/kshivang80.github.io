@@ -33,7 +33,7 @@ const ContactUs = () => {
                             <PhoneIcon fontSize="large" />
                             <h1>Phone</h1>
                             <p>Here is My Phone Number</p>
-                            <a href="tel:+91-6263130690" rel="noreferrer" target="_blank">
+                            <a href="tel:+91-9599571099" rel="noreferrer" target="_blank">
                                 <p>+91-9599571099</p>
                             </a>
                         </div>
@@ -41,7 +41,7 @@ const ContactUs = () => {
                             <EmailIcon fontSize="large" />
                             <h1>Email</h1>
                             <p>You can Simply mail me just by clicking on my email</p>
-                            <a href='mailto:anunwn@gmail.com' rel="noreferrer" target="_blank"><p>kshivang80@gmail.com</p></a>
+                            <a href='mailto:kshivang80@gmail.com' rel="noreferrer" target="_blank"><p>kshivang80@gmail.com</p></a>
                         </div>
                         <div data-aos='fade-up'>
 
