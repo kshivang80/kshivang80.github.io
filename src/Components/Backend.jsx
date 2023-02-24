@@ -10,60 +10,41 @@ import react from '../Resources/Images/LanguageImages/react.png'
 import reactredux from '../Resources/Images/LanguageImages/redux.png'
 import mern from '../Resources/Images/LanguageImages/mern.png'
 import typescript from "../Resources/Images/LanguageImages/typescript.png"
-import npm from "../Resources/Images/LanguageImages/npm.png"
-import bootstrap from "../Resources/Images/LanguageImages/bootstrap.png"
-import chakraui from "../Resources/Images/LanguageImages/chakraui.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Skills = () => {
+const Backend = () => {
     useEffect(() => {
         Aos.init({duration:2000})
        })
     const skills = [
         {
-            img:html,
-            title:'HTML'
-        },
-        {
-            img:css,
-            title:'CSS'
-        },
-        {
-            img:js,
-            title:'Javascript'
-        },
-        {
-            img:typescript,
-            title:'TypeScript'
-        },
-        {
-            img:bootstrap,
-            title:'BootStrap'
-        },
-        {
-            img:chakraui,
-            title:'Chakra-UI'
-        },
-        {
-            img:react,
-            title:'ReactJS'
-        },
-        {
-            img:reactredux,
-            title:'Redux'
-        },
-        {
-            img:npm,
-            title:'NPM'
-        }
+            img: nodejs,
+            title: "Node.js",
+          },
+          {
+            img: "https://taher-ahmed.vercel.app/express.svg",
+            title: "Express.js",
+          },
+          {
+            img: mongodb,
+            title: "MongoDB",
+          },
+          {
+            img: "https://taher-ahmed.vercel.app/postman-icon.svg",
+            title: "Postman",
+          },
+          {
+            img: "https://rangav.gallerycdn.vsassets.io/extensions/rangav/vscode-thunder-client/2.4.3/1676994812363/Microsoft.VisualStudio.Services.Icons.Default",
+            title: "ThunderClient",
+          },
     ]
 
   
 
   return (
     <Container id='skills' data-aos='flip-left'>
-        <h1>Front-End</h1>
+        <h1>Back-End</h1>
         <div className='skillsContainer'>
             {skills.map((ele,index)=>(
                 <div key={index}>
@@ -114,4 +95,4 @@ const Container = styled.div`
    
 `
 
-export default Skills
+export default Backend

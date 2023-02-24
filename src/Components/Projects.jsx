@@ -6,13 +6,14 @@ import youtubePng from '../Resources/Images/Project/youtubePng.png';
 import wrdrbPng from '../Resources/Images/Project/wrdrbPng.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StreamIcon from '@mui/icons-material/Stream';
+import Quickcar from "../Resources/Images/Project/Quickcar.png"
 import { useState } from 'react';
 import { Link } from "@chakra-ui/react";
 
 
 const Projects = () => {
 
-
+    
     const [state, setState] = useState('')
     const projects = [
         {
@@ -23,10 +24,21 @@ const Projects = () => {
             worked: 'A collaborative project, built in one week by a team of 5 developers .',
             githubLink: 'https://github.com/LV-23/fixed-thread-889/tree/main',
             deployedLink: "https://fixed-thread-889.netlify.app/",
-            tags: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra-UI']
+            tags: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra-UI',"Redux","MongoDB","Atlas","Cyclic","Postman"]
         },
         {
             id: 2,
+            title: 'Quick-Car',
+            img: Quickcar,
+            desc: 'Quick-car is India’s largest self-drive car rental marketplace, which offers a wide selection of over 20,000 cars in more than 45 cities in India. Zoomcar gives you great car rental solutions and flexibility to rent a car for 8 hours, a few days, a week, month or even longer!',
+            worked: 'A collaborative project, built in 4 days by a team of 5 developers .',
+          
+            githubLink: 'https://github.com/kshivang80/Quick-Car',
+            deployedLink: 'https://quick-car.netlify.app/',
+            tags: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra-UI',"Redux","MongoDB","Atlas","Cyclic","Postman"]
+        },
+        {
+            id: 3,
             title: 'Deccan Herald Clone',
             img: decanhearaldPng,
             desc: 'Deccan Herald is an Indian English language daily newspaper published from the Indian state of Karnataka. It was founded by K. N. Guruswamy, a liquor businessman from Ballari and was launched on 17 June 1948',
@@ -37,7 +49,7 @@ const Projects = () => {
             tags: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra-UI']
         },
         {
-            id: 3,
+            id: 4,
             title: 'AirGarage Clone',
             img: AirgaragePng,
             desc: "AirGarage is a full service parking operator. We handle all of the day-to-day logistics that go into making your parking lot or garage the most successful version of itself.",
@@ -47,17 +59,17 @@ const Projects = () => {
             deployedLink: "https://dazzling-meerkat-951529.netlify.app/",
             tags: ['HTML', 'CSS', 'Javascript']
         },
-        {
-            id: 4,
-            title: 'YOUTUBE Clone',
-            img: youtubePng,
-            desc: 'YouTube is an American online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and is the second most visited website, after Google Search',
-            worked: 'This is a individual project which is only created by me in 4 days.',
+        // {
+        //     id: 5,
+        //     title: 'YOUTUBE Clone',
+        //     img: youtubePng,
+        //     desc: 'YouTube is an American online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and is the second most visited website, after Google Search',
+        //     worked: 'This is a individual project which is only created by me in 4 days.',
            
-            githubLink: 'https://github.com/masai-course/SHIVANG_fp03_190/tree/master/unit-3/sprint-3/day-1/assignments',
-            deployedLink: 'https://shiny-pegasus-a8ef30.netlify.app/',
-            tags: ['HTML', 'CSS', 'Javascript']
-        }
+        //     githubLink: 'https://github.com/masai-course/SHIVANG_fp03_190/tree/master/unit-3/sprint-3/day-1/assignments',
+        //     deployedLink: 'https://shiny-pegasus-a8ef30.netlify.app/',
+        //     tags: ['HTML', 'CSS', 'Javascript']
+        // }
     ]
 
     return (
