@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.73780a53.css",
-    "main.js": "/static/js/main.3b697194.js",
+    "main.js": "/static/js/main.9ed2c0d6.js",
     "static/js/787.82a78735.chunk.js": "/static/js/787.82a78735.chunk.js",
     "static/media/youtubePng.png": "/static/media/youtubePng.d5f690288c9219ff81fe.png",
     "static/media/wrdrbPng.png": "/static/media/wrdrbPng.ed7ca5348db67d9dedca.png",
@@ -15,6 +15,7 @@
     "static/media/git.png": "/static/media/git.b1472a80b81e487179cf.png",
     "static/media/redux.png": "/static/media/redux.7fec6369cecd1cbd44d6.png",
     "static/media/typescript.png": "/static/media/typescript.8fe41361dff57e3f6c2e.png",
+    "static/media/postman-icon.svg": "/static/media/postman-icon.da1da9ed8c0155586b90272c462f3e87.svg",
     "static/media/nodejs.png": "/static/media/nodejs.b508473ad71a31ce2fae.png",
     "static/media/chakraui.png": "/static/media/chakraui.0719bee98cb0c0b83aeb.png",
     "static/media/html5.png": "/static/media/html5.4e6edfe05f07c383e94f.png",
@@ -22,11 +23,11 @@
     "static/media/mern.png": "/static/media/mern.b58d81727b47466a7cda.png",
     "index.html": "/index.html",
     "main.73780a53.css.map": "/static/css/main.73780a53.css.map",
-    "main.3b697194.js.map": "/static/js/main.3b697194.js.map",
+    "main.9ed2c0d6.js.map": "/static/js/main.9ed2c0d6.js.map",
     "787.82a78735.chunk.js.map": "/static/js/787.82a78735.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73780a53.css",
-    "static/js/main.3b697194.js"
+    "static/js/main.9ed2c0d6.js"
   ]
 }
