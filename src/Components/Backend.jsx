@@ -8,6 +8,9 @@ import mongodb from '../Resources/Images/LanguageImages/mongodb.png'
 import nodejs from '../Resources/Images/LanguageImages/nodejs.png'
 import react from '../Resources/Images/LanguageImages/react.png'
 import reactredux from '../Resources/Images/LanguageImages/redux.png'
+import postman from "../Resources/Images/LanguageImages/postman-icon.svg"
+import express from "../Resources/Images/LanguageImages/express-js.png"
+
 import mern from '../Resources/Images/LanguageImages/mern.png'
 import typescript from "../Resources/Images/LanguageImages/typescript.png"
 import Aos from "aos";
@@ -23,7 +26,7 @@ const Backend = () => {
             title: "Node.js",
           },
           {
-            img: "https://taher-ahmed.vercel.app/express.svg",
+            img: express,
             title: "Express.js",
           },
           {
@@ -31,7 +34,7 @@ const Backend = () => {
             title: "MongoDB",
           },
           {
-            img: "https://taher-ahmed.vercel.app/postman-icon.svg",
+            img: postman,
             title: "Postman",
           },
           {
